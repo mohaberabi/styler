@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <HorizontalScrollView
+
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/horizontalScrollView"
+
+
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:layout_width="wrap_content"
+                        app:singleSelection="true"
+                        android:id="@+id/chipList"
+                        app:singleLine="true"
+                        android:padding="@dimen/medium_spacing"
+                        android:layout_height="wrap_content">
+
+                    </com.google.android.material.chip.ChipGroup>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/linearLayout"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/horizontalScrollView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:hint="how mohab is very loser "
+                        android:contentDescription="again how mohab is very loser peerson"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_margin="@dimen/largemargin"
+                        android:text="@string/homeTitle"
+                        android:layout_width="match_parent"
+
+                        android:id="@+id/title"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+
+
+                        android:layout_margin="40dp"
+                        android:text="FUCK YOU MOHAB THE MOST LOSER  "
+                        android:layout_width="match_parent"
+                        android:textAppearance="?attr/textAppearanceHeadline5"
+
+
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
